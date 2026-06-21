@@ -766,3 +766,58 @@ body::after{
 
 }
  
+
+.open-btn{
+
+
+
+    margin-top:15px;
+
+
+
+    padding:10px 22px;
+
+
+
+    border:none;
+
+    border-radius:999px;
+
+
+
+    background:#c4d83f;
+
+    color:#111;
+
+
+
+    font-weight:700;
+
+    font-size:.9rem;
+
+
+
+    cursor:pointer;
+
+
+
+    transition:.3s;
+
+}
+
+
+
+.open-btn:hover{
+
+
+
+    transform:translateY(-3px);
+
+
+
+    box-shadow:
+
+    0 0 20px rgba(196,216,63,.4);
+
+}
+ 
