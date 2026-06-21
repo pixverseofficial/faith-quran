@@ -38,6 +38,22 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
     result.data.ayahs.forEach(ayah => {
 
+        if (
+
+            ayah.numberInSurah === 1 &&
+
+            surahId != 1 &&
+
+            surahId != 9 &&
+
+            ayah.text.includes("بِسْمِ")
+
+        ) {
+
+            return;
+
+        }
+
         html += `
 
             ${ayah.text}
