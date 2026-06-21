@@ -80,3 +80,38 @@ body{
 
     font-size:1.1rem;
 }
+body{
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
+    min-height:100vh;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    top:-250px;
+    left:-250px;
+    background:#c4d83f;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.35;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    bottom:-250px;
+    right:-250px;
+    background:#c4d83f;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.25;
+    z-index:-1;
+}
