@@ -13,3 +13,33 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}`)
 
 });
  
+
+fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
+
+.then(res => res.json())
+
+.then(result => {
+
+    let html = "";
+
+    result.data.ayahs.forEach(ayah => {
+
+        html += `
+
+            ${ayah.text}
+
+            <span class="ayah-number">
+
+                ${ayah.numberInSurah}
+
+            </span>
+
+        `;
+
+    });
+
+    document.getElementById("surahContent").innerHTML =
+    html;
+
+});
+ 
