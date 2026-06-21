@@ -22,6 +22,20 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
     let html = "";
 
+    if(surahId != 1 && surahId != 9){
+
+        html += `
+
+            <div class="bismillah">
+
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+
+            </div>
+
+        `;
+
+    }
+
     result.data.ayahs.forEach(ayah => {
 
         html += `
@@ -42,4 +56,3 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
     html;
 
 });
- 
