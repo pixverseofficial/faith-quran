@@ -1,4 +1,3 @@
-```javascript
 const surahList = document.getElementById("surahList");
 const searchInput = document.getElementById("searchInput");
 
@@ -77,4 +76,3 @@ searchInput.addEventListener("input", function(){
     displaySurahs(filteredSurahs);
 
 });
-```
