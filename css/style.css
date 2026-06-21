@@ -865,3 +865,34 @@ body::after{
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
+.quran-container{
+    width:95%;
+    max-width:1200px;
+    padding:20px 30px;
+}
+
+#surahContent{
+    font-family:'Amiri Quran',serif;
+
+    font-size:2.8rem;
+
+    line-height:5.2rem;
+
+    word-spacing:8px;
+
+    text-align:right;
+
+    direction:rtl;
+}
+
+#surahContent .ayah-number{
+
+    width:42px;
+    height:42px;
+
+    line-height:42px;
+
+    font-size:.9rem;
+
+    margin:0 12px;
+}
