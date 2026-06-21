@@ -70,6 +70,28 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
     }
 
+    if(muqatta[surahId]){
+
+        html += `
+
+            <span class="muqatta">
+
+                ${muqatta[surahId]}
+
+            </span>
+
+            <span class="ayah-number">
+
+                1
+
+            </span>
+
+            <br><br>
+
+        `;
+
+    }
+
     result.data.ayahs.forEach(ayah => {
 
         if (
