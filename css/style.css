@@ -605,3 +605,72 @@ body::after{
 }
 
 
+.search-card{
+
+
+
+    width:80%;
+
+    max-width:800px;
+
+
+
+    margin:auto;
+
+
+
+    padding:25px;
+
+
+
+    background:rgba(255,255,255,.04);
+
+
+
+    backdrop-filter:blur(20px);
+
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+
+    border-radius:30px;
+
+}
+
+
+
+#searchInput{
+
+
+
+    width:100%;
+
+
+
+    padding:18px 25px;
+
+
+
+    border:none;
+
+
+
+    border-radius:15px;
+
+
+
+    background:#111;
+
+
+
+    color:white;
+
+
+
+    font-size:1rem;
+
+}
+ 
+
