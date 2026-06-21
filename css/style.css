@@ -15,3 +15,26 @@ h1{
     margin-top:100px;
     color:#c4d83f;
 }
+.navbar{
+    width:90%;
+    max-width:1400px;
+
+    margin:20px auto;
+
+    padding:20px 30px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+}
+
+.navbar h2{
+    color:#c4d83f;
+    font-size:2rem;
+}
