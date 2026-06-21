@@ -674,3 +674,95 @@ body::after{
 }
  
 
+#surahList{
+
+    width:90%;
+
+    max-width:1300px;
+
+
+
+    margin:60px auto;
+
+
+
+    display:grid;
+
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+
+    gap:30px;
+
+}
+
+
+
+.surah-card{
+
+
+
+    background:rgba(255,255,255,.04);
+
+
+
+    backdrop-filter:blur(20px);
+
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+
+    border-radius:30px;
+
+
+
+    padding:40px;
+
+
+
+    text-align:center;
+
+
+
+    transition:.4s;
+
+}
+
+
+
+.surah-card h3{
+
+    color:#c4d83f;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.surah-card:hover{
+
+
+
+    transform:translateY(-10px);
+
+
+
+    border-color:#c4d83f;
+
+
+
+    box-shadow:
+
+    0 0 30px rgba(196,216,63,.15),
+
+    0 0 60px rgba(196,216,63,.08);
+
+}
+ 
