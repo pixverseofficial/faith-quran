@@ -79,15 +79,17 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
             html += `
 
-                ${muqatta[surahId]}
+                <div class="muqatta-line">
 
-                <span class="ayah-number">
+                    <span class="muqatta">
+                        ${muqatta[surahId]}
+                    </span>
 
-                    1
+                    <span class="ayah-number">
+                        1
+                    </span>
 
-                </span>
-
-                <br><br>
+                </div>
 
             `;
 
