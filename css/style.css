@@ -38,3 +38,45 @@ h1{
     color:#c4d83f;
     font-size:2rem;
 }
+body{
+    background:#050505;
+    color:white;
+    padding:30px;
+}
+
+#surahList{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fill,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.surah-card{
+
+    background:#111;
+
+    border:1px solid #222;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.surah-card:hover{
+
+    border-color:#c4d83f;
+
+    transform:translateY(-5px);
+}
+
+.surah-card h3{
+
+    color:#c4d83f;
+
+    font-size:1.1rem;
+}
