@@ -907,3 +907,39 @@ body::after{
     margin-bottom:25px;
 
 }
+.surah-header-card{
+
+    margin-top:25px;
+
+    padding:25px 35px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    text-align:center;
+}
+
+#surahArabicName{
+
+    font-family:'Amiri Quran',serif;
+
+    font-size:3rem;
+
+    color:#c4d83f;
+
+    margin-bottom:10px;
+}
+
+#surahMeta{
+
+    color:#d9d9d9;
+
+    font-size:1rem;
+
+    letter-spacing:1px;
+}
