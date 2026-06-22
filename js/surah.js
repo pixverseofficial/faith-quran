@@ -103,6 +103,15 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
         }
 
+        if (
+            ayah.numberInSurah === 1 &&
+            surahId != 1 &&
+            surahId != 9 &&
+            !muqatta[surahId]
+        ){
+            return;
+        }
+
         html += `
 
             ${ayah.text}
