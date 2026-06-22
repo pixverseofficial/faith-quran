@@ -78,6 +78,10 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
     result.data.ayahs.forEach(ayah => {
 
+        if (ayah.numberInSurah === 1) {
+            console.log(ayah.text);
+        }
+
         if(
             ayah.numberInSurah === 1 &&
             muqatta[surahId]
