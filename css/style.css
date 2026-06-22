@@ -943,3 +943,12 @@ body::after{
 
     letter-spacing:1px;
 }
+.surah-logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(0 0 15px rgba(196,216,63,.6));
+}
