@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 
-const surahId = params.get("surah");
+const surahId = Number(params.get("surah"));
 
 console.log(surahId);
 
@@ -62,7 +62,7 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
     };
 
-    if(surahId != 1 && surahId != 9){
+    if(surahId !== 1 && surahId !== 9){
 
         html += `
 
@@ -109,11 +109,14 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
 
         if (
             ayah.numberInSurah === 1 &&
-            surahId != 1 &&
-            surahId != 9 &&
+            surahId !== 1 &&
+            surahId !== 9 &&
             !muqatta[surahId]
         ){
-            ayah.text = ayah.text.split("الرَّحِيمِ").pop().trim();
+            ayah.text = ayah.text.replace(
+                "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+                ""
+            ).trim();
         }
 
         html += `
