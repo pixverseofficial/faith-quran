@@ -11,6 +11,12 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}`)
     document.getElementById("surahName").innerText =
     data.data.englishName;
 
+    document.getElementById("surahArabicName").innerText =
+    data.data.name;
+
+    document.getElementById("surahMeta").innerText =
+    `${data.data.numberOfAyahs} Ayat • ${data.data.revelationType}`;
+
 });
  
 
