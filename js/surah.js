@@ -109,7 +109,10 @@ fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
             surahId != 9 &&
             !muqatta[surahId]
         ){
-            return;
+            ayah.text = ayah.text.replace(
+                "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+                ""
+            ).trim();
         }
 
         html += `
